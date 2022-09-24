@@ -1,4 +1,5 @@
 const listGame = [
+
     {
         name: 'Elden Ring',
         image: 'https://hanoicomputercdn.com/media/lib/03-03-2022/dia-game-ps5-elden-ring-asia-03.jpg',
@@ -6,50 +7,68 @@ const listGame = [
         rating: "16+",
         year: 2021,
         genre: 'soul like',
-        studio: 'fromSoftware'
+        studio: 'fromSoftware',
+        price: 90,
+        discount: 50,
+        describe: 'Elden Ring is a 2022 action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment. It was directed by Hidetaka Miyazaki with worldbuilding provided by the fantasy writer George R. R. Martin. The game was released for PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S on February 25.'
     },
     {
-        name: 'Elden Ring',
-        image: 'https://hanoicomputercdn.com/media/lib/03-03-2022/dia-game-ps5-elden-ring-asia-03.jpg',
-        starRating: 5,
-        rating: "16+",
-        year: 2021,
-        genre: 'soul like',
-        studio: 'fromSoftware'
+        name: 'God of War: Ragnarok',
+        image: 'https://image.thanhnien.vn/w1024/Uploaded/2022/wovunka/2022_04_22/god-7624.png',
+        starRating: 4.5,
+        rating: "13+",
+        year: 2023,
+        genre: 'action',
+        studio: 'Sony',
+        price: 75,
+        discount: 10,
+        describe: "God of War Ragnarök is an upcoming action-adventure game developed by Santa Monica Studio and will be published by Sony Interactive Entertainment (SIE). It is scheduled to be released worldwide on November 9, 2022, for the PlayStation 4 (PS4) and PlayStation 5 (PS5)"
     }, {
-        name: 'Elden Ring',
-        image: 'https://hanoicomputercdn.com/media/lib/03-03-2022/dia-game-ps5-elden-ring-asia-03.jpg',
+        name: 'Day gone',
+        image: 'https://khiphach.vn/wp-content/uploads/2021/05/days-gone-tai-full-khiphach.jpg',
         starRating: 5,
         rating: "16+",
-        year: 2021,
-        genre: 'soul like',
-        studio: 'fromSoftware'
+        year: 2019,
+        genre: 'FPS, TPS, Action',
+        studio: 'Sony',
+        price: 60,
+        discount: 90,
+        describe: 'Days Gone is an open-world action-adventure game set in a harsh wilderness two years after a devastating global pandemic'
     }, {
-        name: 'Elden Ring',
-        image: 'https://hanoicomputercdn.com/media/lib/03-03-2022/dia-game-ps5-elden-ring-asia-03.jpg',
+        name: 'The last of us Remake',
+        image: 'https://game8.vn/media/202207/images/d20220518_TLOUX_SocialAssets_T1X_-Annouce_16x9.jpg',
         starRating: 5,
-        rating: "16+",
-        year: 2021,
-        genre: 'soul like',
-        studio: 'fromSoftware'
+        rating: "18+",
+        year: 2022,
+        genre: 'story',
+        studio: 'NaughtyDog',
+        price: 100,
+        discount: 35,
+        describe: 'The Last of Us là một trò chơi điện tử hành động phiêu lưu góc nhìn thứ ba năm 2013 do Naughty Dog phát triển và được phát hành bởi Sony Interactive Entertainment. Trong trò chơi, người chơi sẽ điều khiển Joel, một kẻ buôn lậu có nhiệm vụ hộ tống một cô bé có tên Ellie đi qua nước Mỹ trong thế giới hậu tận thế'
     },
     {
-        name: 'Elden Ring',
-        image: 'https://hanoicomputercdn.com/media/lib/03-03-2022/dia-game-ps5-elden-ring-asia-03.jpg',
-        starRating: 5,
-        rating: "16+",
-        year: 2021,
-        genre: 'soul like',
-        studio: 'fromSoftware'
+        name: 'Nier: Automata',
+        image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/524220/ss_8b29f7e1ce9a8b9313dc3eb50dbe76a4cf94eef9.1920x1080.jpg?t=1646911723',
+        starRating: 3,
+        rating: "13+",
+        year: 2017,
+        genre: 'Action',
+        studio: 'SquareEnix',
+        price: 40,
+        discount: 70,
+        describe: 'NieR: Automata là một game hành động nhập vai được phát triển bởi Platinum Games và phát hành bởi Square cho PlayStation 4 và Microsoft. Trò chơi đã phát hành tại Nhật Bản vào tháng 2 năm 2017, và trên toàn thế giới vào tháng sau'
     },
     {
-        name: 'Elden Ring',
-        image: 'https://hanoicomputercdn.com/media/lib/03-03-2022/dia-game-ps5-elden-ring-asia-03.jpg',
+        name: 'Thần trùng',
+        image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1726400/capsule_616x353.jpg?t=1663214351',
         starRating: 5,
-        rating: "16+",
-        year: 2021,
-        genre: 'soul like',
-        studio: 'fromSoftware'
+        rating: "13+",
+        year: 2022,
+        genre: 'indie, horror',
+        studio: 'DUT studio',
+        price: 5,
+        discount: 0,
+        describe: 'Thần Trùng là một tựa game phiêu lưu - tâm lý - kinh dị do 3 nhà phát triển của DUT Studio thực hiện, lấy bối cảnh tại thủ đô Hà Nội năm 2022. Theo streamer Dũng CT, người đứng đầu DUT Studio, cho biết tựa game sẽ có nhiều phân cảnh jumpscare (hù dọa bất ngờ) đáng sợ mang lại sự hồi hộp và căng não cho người chơi.'
     }, {
         name: 'Elden Ring',
         image: 'https://hanoicomputercdn.com/media/lib/03-03-2022/dia-game-ps5-elden-ring-asia-03.jpg',
@@ -57,32 +76,68 @@ const listGame = [
         rating: "16+",
         year: 2021,
         genre: 'soul like',
-        studio: 'fromSoftware'
-    }, {
-        name: 'Elden Ring',
-        image: 'https://hanoicomputercdn.com/media/lib/03-03-2022/dia-game-ps5-elden-ring-asia-03.jpg',
-        starRating: 5,
-        rating: "16+",
-        year: 2021,
-        genre: 'soul like',
-        studio: 'fromSoftware'
-    }, {
-        name: 'Elden Ring',
-        image: 'https://hanoicomputercdn.com/media/lib/03-03-2022/dia-game-ps5-elden-ring-asia-03.jpg',
-        starRating: 5,
-        rating: "16+",
-        year: 2021,
-        genre: 'soul like',
-        studio: 'fromSoftware'
+        studio: 'fromSoftware',
+        price: 90,
+        discount: 50,
+        describe: 'Elden Ring is a 2022 action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment. It was directed by Hidetaka Miyazaki with worldbuilding provided by the fantasy writer George R. R. Martin. The game was released for PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S on February 25.'
     },
     {
-        name: 'Elden Ring',
-        image: 'https://hanoicomputercdn.com/media/lib/03-03-2022/dia-game-ps5-elden-ring-asia-03.jpg',
+        name: 'God of War: Ragnarok',
+        image: 'https://image.thanhnien.vn/w1024/Uploaded/2022/wovunka/2022_04_22/god-7624.png',
+        starRating: 4.5,
+        rating: "13+",
+        year: 2023,
+        genre: 'action',
+        studio: 'Sony',
+        price: 75,
+        discount: 10,
+        describe: "God of War Ragnarök is an upcoming action-adventure game developed by Santa Monica Studio and will be published by Sony Interactive Entertainment (SIE). It is scheduled to be released worldwide on November 9, 2022, for the PlayStation 4 (PS4) and PlayStation 5 (PS5)"
+    }, {
+        name: 'Day gone',
+        image: 'https://khiphach.vn/wp-content/uploads/2021/05/days-gone-tai-full-khiphach.jpg',
         starRating: 5,
         rating: "16+",
-        year: 2021,
-        genre: 'soul like',
-        studio: 'fromSoftware'
+        year: 2019,
+        genre: 'FPS, TPS, Action',
+        studio: 'Sony',
+        price: 60,
+        discount: 90,
+        describe: 'Days Gone is an open-world action-adventure game set in a harsh wilderness two years after a devastating global pandemic'
+    }, {
+        name: 'The last of us Remake',
+        image: 'https://game8.vn/media/202207/images/d20220518_TLOUX_SocialAssets_T1X_-Annouce_16x9.jpg',
+        starRating: 5,
+        rating: "18+",
+        year: 2022,
+        genre: 'story',
+        studio: 'NaughtyDog',
+        price: 100,
+        discount: 35,
+        describe: 'The Last of Us là một trò chơi điện tử hành động phiêu lưu góc nhìn thứ ba năm 2013 do Naughty Dog phát triển và được phát hành bởi Sony Interactive Entertainment. Trong trò chơi, người chơi sẽ điều khiển Joel, một kẻ buôn lậu có nhiệm vụ hộ tống một cô bé có tên Ellie đi qua nước Mỹ trong thế giới hậu tận thế'
+    },
+    {
+        name: 'Nier: Automata',
+        image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/524220/ss_8b29f7e1ce9a8b9313dc3eb50dbe76a4cf94eef9.1920x1080.jpg?t=1646911723',
+        starRating: 3,
+        rating: "13+",
+        year: 2017,
+        genre: 'Action',
+        studio: 'SquareEnix',
+        price: 40,
+        discount: 70,
+        describe: 'NieR: Automata là một game hành động nhập vai được phát triển bởi Platinum Games và phát hành bởi Square cho PlayStation 4 và Microsoft. Trò chơi đã phát hành tại Nhật Bản vào tháng 2 năm 2017, và trên toàn thế giới vào tháng sau'
+    },
+    {
+        name: 'Thần trùng',
+        image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1726400/capsule_616x353.jpg?t=1663214351',
+        starRating: 5,
+        rating: "13+",
+        year: 2022,
+        genre: 'indie, horror',
+        studio: 'DUT studio',
+        price: 5,
+        discount: 0,
+        describe: 'Thần Trùng là một tựa game phiêu lưu - tâm lý - kinh dị do 3 nhà phát triển của DUT Studio thực hiện, lấy bối cảnh tại thủ đô Hà Nội năm 2022. Theo streamer Dũng CT, người đứng đầu DUT Studio, cho biết tựa game sẽ có nhiều phân cảnh jumpscare (hù dọa bất ngờ) đáng sợ mang lại sự hồi hộp và căng não cho người chơi.'
     }, {
         name: 'Elden Ring',
         image: 'https://hanoicomputercdn.com/media/lib/03-03-2022/dia-game-ps5-elden-ring-asia-03.jpg',
@@ -90,7 +145,68 @@ const listGame = [
         rating: "16+",
         year: 2021,
         genre: 'soul like',
-        studio: 'fromSoftware'
+        studio: 'fromSoftware',
+        price: 90,
+        discount: 50,
+        describe: 'Elden Ring is a 2022 action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment. It was directed by Hidetaka Miyazaki with worldbuilding provided by the fantasy writer George R. R. Martin. The game was released for PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S on February 25.'
+    },
+    {
+        name: 'God of War: Ragnarok',
+        image: 'https://image.thanhnien.vn/w1024/Uploaded/2022/wovunka/2022_04_22/god-7624.png',
+        starRating: 4.5,
+        rating: "13+",
+        year: 2023,
+        genre: 'action',
+        studio: 'Sony',
+        price: 75,
+        discount: 10,
+        describe: "God of War Ragnarök is an upcoming action-adventure game developed by Santa Monica Studio and will be published by Sony Interactive Entertainment (SIE). It is scheduled to be released worldwide on November 9, 2022, for the PlayStation 4 (PS4) and PlayStation 5 (PS5)"
+    }, {
+        name: 'Day gone',
+        image: 'https://khiphach.vn/wp-content/uploads/2021/05/days-gone-tai-full-khiphach.jpg',
+        starRating: 5,
+        rating: "16+",
+        year: 2019,
+        genre: 'FPS, TPS, Action',
+        studio: 'Sony',
+        price: 60,
+        discount: 90,
+        describe: 'Days Gone is an open-world action-adventure game set in a harsh wilderness two years after a devastating global pandemic'
+    }, {
+        name: 'The last of us Remake',
+        image: 'https://game8.vn/media/202207/images/d20220518_TLOUX_SocialAssets_T1X_-Annouce_16x9.jpg',
+        starRating: 5,
+        rating: "18+",
+        year: 2022,
+        genre: 'story',
+        studio: 'NaughtyDog',
+        price: 100,
+        discount: 35,
+        describe: 'The Last of Us là một trò chơi điện tử hành động phiêu lưu góc nhìn thứ ba năm 2013 do Naughty Dog phát triển và được phát hành bởi Sony Interactive Entertainment. Trong trò chơi, người chơi sẽ điều khiển Joel, một kẻ buôn lậu có nhiệm vụ hộ tống một cô bé có tên Ellie đi qua nước Mỹ trong thế giới hậu tận thế'
+    },
+    {
+        name: 'Nier: Automata',
+        image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/524220/ss_8b29f7e1ce9a8b9313dc3eb50dbe76a4cf94eef9.1920x1080.jpg?t=1646911723',
+        starRating: 3,
+        rating: "13+",
+        year: 2017,
+        genre: 'Action',
+        studio: 'SquareEnix',
+        price: 40,
+        discount: 70,
+        describe: 'NieR: Automata là một game hành động nhập vai được phát triển bởi Platinum Games và phát hành bởi Square cho PlayStation 4 và Microsoft. Trò chơi đã phát hành tại Nhật Bản vào tháng 2 năm 2017, và trên toàn thế giới vào tháng sau'
+    },
+    {
+        name: 'Thần trùng',
+        image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1726400/capsule_616x353.jpg?t=1663214351',
+        starRating: 5,
+        rating: "13+",
+        year: 2022,
+        genre: 'indie, horror',
+        studio: 'DUT studio',
+        price: 5,
+        discount: 0,
+        describe: 'Thần Trùng là một tựa game phiêu lưu - tâm lý - kinh dị do 3 nhà phát triển của DUT Studio thực hiện, lấy bối cảnh tại thủ đô Hà Nội năm 2022. Theo streamer Dũng CT, người đứng đầu DUT Studio, cho biết tựa game sẽ có nhiều phân cảnh jumpscare (hù dọa bất ngờ) đáng sợ mang lại sự hồi hộp và căng não cho người chơi.'
     }, {
         name: 'Elden Ring',
         image: 'https://hanoicomputercdn.com/media/lib/03-03-2022/dia-game-ps5-elden-ring-asia-03.jpg',
@@ -98,9 +214,140 @@ const listGame = [
         rating: "16+",
         year: 2021,
         genre: 'soul like',
-        studio: 'fromSoftware'
+        studio: 'fromSoftware',
+        price: 90,
+        discount: 50,
+        describe: 'Elden Ring is a 2022 action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment. It was directed by Hidetaka Miyazaki with worldbuilding provided by the fantasy writer George R. R. Martin. The game was released for PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S on February 25.'
+    },
+    {
+        name: 'God of War: Ragnarok',
+        image: 'https://image.thanhnien.vn/w1024/Uploaded/2022/wovunka/2022_04_22/god-7624.png',
+        starRating: 4.5,
+        rating: "13+",
+        year: 2023,
+        genre: 'action',
+        studio: 'Sony',
+        price: 75,
+        discount: 10,
+        describe: "God of War Ragnarök is an upcoming action-adventure game developed by Santa Monica Studio and will be published by Sony Interactive Entertainment (SIE). It is scheduled to be released worldwide on November 9, 2022, for the PlayStation 4 (PS4) and PlayStation 5 (PS5)"
+    }, {
+        name: 'Day gone',
+        image: 'https://khiphach.vn/wp-content/uploads/2021/05/days-gone-tai-full-khiphach.jpg',
+        starRating: 5,
+        rating: "16+",
+        year: 2019,
+        genre: 'FPS, TPS, Action',
+        studio: 'Sony',
+        price: 60,
+        discount: 90,
+        describe: 'Days Gone is an open-world action-adventure game set in a harsh wilderness two years after a devastating global pandemic'
+    }, {
+        name: 'The last of us Remake',
+        image: 'https://game8.vn/media/202207/images/d20220518_TLOUX_SocialAssets_T1X_-Annouce_16x9.jpg',
+        starRating: 5,
+        rating: "18+",
+        year: 2022,
+        genre: 'story',
+        studio: 'NaughtyDog',
+        price: 100,
+        discount: 35,
+        describe: 'The Last of Us là một trò chơi điện tử hành động phiêu lưu góc nhìn thứ ba năm 2013 do Naughty Dog phát triển và được phát hành bởi Sony Interactive Entertainment. Trong trò chơi, người chơi sẽ điều khiển Joel, một kẻ buôn lậu có nhiệm vụ hộ tống một cô bé có tên Ellie đi qua nước Mỹ trong thế giới hậu tận thế'
+    },
+    {
+        name: 'Nier: Automata',
+        image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/524220/ss_8b29f7e1ce9a8b9313dc3eb50dbe76a4cf94eef9.1920x1080.jpg?t=1646911723',
+        starRating: 3,
+        rating: "13+",
+        year: 2017,
+        genre: 'Action',
+        studio: 'SquareEnix',
+        price: 40,
+        discount: 70,
+        describe: 'NieR: Automata là một game hành động nhập vai được phát triển bởi Platinum Games và phát hành bởi Square cho PlayStation 4 và Microsoft. Trò chơi đã phát hành tại Nhật Bản vào tháng 2 năm 2017, và trên toàn thế giới vào tháng sau'
+    },
+    {
+        name: 'Thần trùng',
+        image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1726400/capsule_616x353.jpg?t=1663214351',
+        starRating: 5,
+        rating: "13+",
+        year: 2022,
+        genre: 'indie, horror',
+        studio: 'DUT studio',
+        price: 5,
+        discount: 0,
+        describe: 'Thần Trùng là một tựa game phiêu lưu - tâm lý - kinh dị do 3 nhà phát triển của DUT Studio thực hiện, lấy bối cảnh tại thủ đô Hà Nội năm 2022. Theo streamer Dũng CT, người đứng đầu DUT Studio, cho biết tựa game sẽ có nhiều phân cảnh jumpscare (hù dọa bất ngờ) đáng sợ mang lại sự hồi hộp và căng não cho người chơi.'
+    }, {
+        name: 'Elden Ring',
+        image: 'https://hanoicomputercdn.com/media/lib/03-03-2022/dia-game-ps5-elden-ring-asia-03.jpg',
+        starRating: 5,
+        rating: "16+",
+        year: 2021,
+        genre: 'soul like',
+        studio: 'fromSoftware',
+        price: 90,
+        discount: 50,
+        describe: 'Elden Ring is a 2022 action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment. It was directed by Hidetaka Miyazaki with worldbuilding provided by the fantasy writer George R. R. Martin. The game was released for PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S on February 25.'
+    },
+    {
+        name: 'God of War: Ragnarok',
+        image: 'https://image.thanhnien.vn/w1024/Uploaded/2022/wovunka/2022_04_22/god-7624.png',
+        starRating: 4.5,
+        rating: "13+",
+        year: 2023,
+        genre: 'action',
+        studio: 'Sony',
+        price: 75,
+        discount: 10,
+        describe: "God of War Ragnarök is an upcoming action-adventure game developed by Santa Monica Studio and will be published by Sony Interactive Entertainment (SIE). It is scheduled to be released worldwide on November 9, 2022, for the PlayStation 4 (PS4) and PlayStation 5 (PS5)"
+    }, {
+        name: 'Day gone',
+        image: 'https://khiphach.vn/wp-content/uploads/2021/05/days-gone-tai-full-khiphach.jpg',
+        starRating: 5,
+        rating: "16+",
+        year: 2019,
+        genre: 'FPS, TPS, Action',
+        studio: 'Sony',
+        price: 60,
+        discount: 90,
+        describe: 'Days Gone is an open-world action-adventure game set in a harsh wilderness two years after a devastating global pandemic'
+    }, {
+        name: 'The last of us Remake',
+        image: 'https://game8.vn/media/202207/images/d20220518_TLOUX_SocialAssets_T1X_-Annouce_16x9.jpg',
+        starRating: 5,
+        rating: "18+",
+        year: 2022,
+        genre: 'story',
+        studio: 'NaughtyDog',
+        price: 100,
+        discount: 35,
+        describe: 'The Last of Us là một trò chơi điện tử hành động phiêu lưu góc nhìn thứ ba năm 2013 do Naughty Dog phát triển và được phát hành bởi Sony Interactive Entertainment. Trong trò chơi, người chơi sẽ điều khiển Joel, một kẻ buôn lậu có nhiệm vụ hộ tống một cô bé có tên Ellie đi qua nước Mỹ trong thế giới hậu tận thế'
+    },
+    {
+        name: 'Nier: Automata',
+        image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/524220/ss_8b29f7e1ce9a8b9313dc3eb50dbe76a4cf94eef9.1920x1080.jpg?t=1646911723',
+        starRating: 3,
+        rating: "13+",
+        year: 2017,
+        genre: 'Action',
+        studio: 'SquareEnix',
+        price: 40,
+        discount: 70,
+        describe: 'NieR: Automata là một game hành động nhập vai được phát triển bởi Platinum Games và phát hành bởi Square cho PlayStation 4 và Microsoft. Trò chơi đã phát hành tại Nhật Bản vào tháng 2 năm 2017, và trên toàn thế giới vào tháng sau'
+    },
+    {
+        name: 'Thần trùng',
+        image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1726400/capsule_616x353.jpg?t=1663214351',
+        starRating: 5,
+        rating: "13+",
+        year: 2022,
+        genre: 'indie, horror',
+        studio: 'DUT studio',
+        price: 5,
+        discount: 0,
+        describe: 'Thần Trùng là một tựa game phiêu lưu - tâm lý - kinh dị do 3 nhà phát triển của DUT Studio thực hiện, lấy bối cảnh tại thủ đô Hà Nội năm 2022. Theo streamer Dũng CT, người đứng đầu DUT Studio, cho biết tựa game sẽ có nhiều phân cảnh jumpscare (hù dọa bất ngờ) đáng sợ mang lại sự hồi hộp và căng não cho người chơi.'
     },
 ]
+
 
 
 export { listGame } 

@@ -1,10 +1,19 @@
+import { useDispatch } from "react-redux"
+import { selectGame } from "../../Redux/action"
+
+
+
 export default function ListItem({ game }) {
-    console.log(game)
+    const dispatch = useDispatch()
+
+    const handleClick = () => {
+        dispatch(selectGame(game))
+    }
     return (
-        <article className="flex items-start space-x-6 p-6">
-            <img src={game.image} alt="" width="60" height="88" className="flex-none rounded-md bg-slate-100" />
+        <article className="flex items-start space-x-6 p-6 hover:bg-slate-900 " onClick={handleClick}>
+            <img src={game.image} alt="" width="60" height="88" className="flex-none rounded-md" />
             <div className="min-w-0 relative flex-auto">
-                <h2 className="font-semibold text-white truncate pr-20">{game.name}</h2>
+                <h2 className="font-semibold truncate pr-20">{game.name}</h2>
                 <dl className="mt-2 flex flex-wrap text-sm leading-6 font-medium">
                     <div className="absolute top-0 right-0 flex items-center space-x-1">
                         <dt className="text-sky-500">
