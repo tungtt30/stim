@@ -6,3 +6,18 @@ export const selectGame = (data) => {
         payload: data
     }
 }
+
+export const addToCart = (data) => {
+    return {
+        type: 'addToCart',
+        payload: data
+    }
+}
+
+export const addToWishlist = (data) => {
+    return {
+        type: 'addToWishlist',
+        payload: data
+    }
+}
+

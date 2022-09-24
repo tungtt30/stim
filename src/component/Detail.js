@@ -1,14 +1,19 @@
 import React, { useState } from 'react'
 import Divider from './Divider'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { addToCart, addToWishlist } from '../Redux/action'
 
 const Detail = ({ gameItem }) => {
 
     const { selectedGame } = useSelector((state) => state)
+    const dispatch = useDispatch()
 
 
-    const handleClick = () => {
-
+    const handleClickBuy = () => {
+        dispatch(addToCart(selectedGame))
+    }
+    const handleClickWishlist = () => {
+        dispatch(addToWishlist(selectedGame))
     }
 
     return (
@@ -31,8 +36,8 @@ const Detail = ({ gameItem }) => {
                     </div>
 
                     <div className='mt-4 space-x-2'>
-                        <button className=' h-10 w-16 border border-gray-300 rounded-md bg-blue-900 hover:bg-blue-700' onClick={handleClick}>Buy</button>
-                        <button className=' h-10 p-1 border border-gray-300 rounded-md hover:bg-slate-800' onClick={handleClick}>Add to wish list</button>
+                        <button className=' h-10 w-16 border border-gray-300 rounded-md bg-blue-900 hover:bg-blue-700' onClick={handleClickBuy}>Buy</button>
+                        <button className=' h-10 p-1 border border-gray-300 rounded-md hover:bg-slate-800' onClick={handleClickWishlist}>Add to wish list</button>
                     </div>
                 </div>
 
