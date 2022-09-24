@@ -1,6 +1,6 @@
 import React from 'react'
-import SideBar from './SideBar'
-import Center from './Center'
+import SideBar from '../component/SideBar'
+import Center from '../component/Center'
 
 const Home = () => {
     return (

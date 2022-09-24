@@ -1,14 +1,15 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon, ShoppingCartIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline'
+import { Link, BrowserRouter } from 'react-router-dom'
+import { Bars3Icon, XMarkIcon, ShoppingCartIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 import Logo from '../assets/logo.png'
 import avata from '../assets/avt.jpg'
 
 const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'New', href: '#', current: false },
-    { name: 'Trending', href: '#', current: false },
-    { name: 'For developer', href: '#', current: false },
+    { name: 'Dashboard', href: '/', current: true },
+    { name: 'New', href: '/new', current: false },
+    { name: 'Trending', href: '/trending', current: false },
+    { name: 'For developer', href: '/dev', current: false },
 ]
 
 function classNames(...classes) {
@@ -49,9 +50,9 @@ export default function Navbar() {
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
-                                            <a
+                                            <Link
                                                 key={item.name}
-                                                href={item.href}
+                                                to={item.href}
                                                 className={classNames(
                                                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                                                     'px-3 py-2 rounded-md text-sm font-medium'
@@ -59,7 +60,7 @@ export default function Navbar() {
                                                 aria-current={item.current ? 'page' : undefined}
                                             >
                                                 {item.name}
-                                            </a>
+                                            </Link>
                                         ))}
                                     </div>
                                 </div>
