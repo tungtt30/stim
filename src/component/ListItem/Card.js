@@ -3,7 +3,7 @@ import image from "../assets/edr.jpg"
 
 const Card = () => {
     return (
-        <div className="flex font-sans bg-white rounded-xl">
+        <div className="flex font-sans bg-white rounded-xl shadow-2xl">
             <div className="flex-none w-32 rounded-xl p-2 ">
                 <img src={image} alt="" className=" inset-0 w-full h-full object-cover rounded-lg" loading="lazy" />
             </div>
