@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { Bars3Icon, XMarkIcon, ShoppingCartIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 import Logo from '../assets/logo.png'
 import avata from '../assets/avt.jpg'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 
 const navigation = [
@@ -20,9 +20,12 @@ function classNames(...classes) {
 
 export default function Navbar() {
     const { cart } = useSelector(state => state)
+    const dispatch = useDispatch()
 
-    const setShow = (data) => {
-
+    const setShow = () => {
+        dispatch({
+            type: 'setShowCart'
+        })
     }
 
 
@@ -44,14 +47,14 @@ export default function Navbar() {
                                 </Disclosure.Button>
                             </div>
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                                <div className="flex flex-shrink-0 items-center rounded-full">
+                                <div className="flex flex-shrink-0 items-center ">
                                     <img
-                                        className="block h-8 w-auto lg:hidden"
+                                        className="block h-8 w-auto lg:hidden rounded-full"
                                         src={Logo}
                                         alt="Your Company"
                                     />
                                     <img
-                                        className="hidden h-8 w-auto lg:block"
+                                        className="hidden h-8 w-auto lg:block rounded-full"
                                         src={Logo}
                                         alt="Your Company"
                                     />
@@ -84,14 +87,14 @@ export default function Navbar() {
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <button
-                                    onMouseEnter={() => setShow(true)}
-                                    onMouseLeave={() => setShow(false)}
+                                    onClick={setShow}
                                     type="button"
                                     className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                                 >
                                     <span className="sr-only">View notifications</span>
                                     <ShoppingCartIcon className='h-6 w-6 text-white' />
-                                    <div className='absolute inset-y-3 right-14 text-sm text-white bg-red-600 w-5 h-5 rounded-full' >{cart.length}</div>
+                                    {cart.length == 0 ? '' : <div className='absolute inset-y-3 right-14 text-sm text-white bg-red-600 w-5 h-5 rounded-full' >{cart.length}</div>}
+
                                 </button>
 
                                 {/* Profile dropdown */}

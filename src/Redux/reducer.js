@@ -6,7 +6,7 @@ const initState = {
     selectedGame: {
         name: '',
         genre: '',
-        image: '',
+        image: 'https://ict-imgs.vgcloud.vn/2021/12/21/09/game-nft-la-gi-va-hoa-t-do-ng-nhu-the-na-o.jpg',
         rating: '',
         starRating: '',
         studio: '',
@@ -15,7 +15,8 @@ const initState = {
         discount: 0
     },
     wishlist: [],
-    cart: []
+    cart: [],
+    isCartShow: false
 }
 
 const rootReducer = (state = initState, action) => {
@@ -35,6 +36,12 @@ const rootReducer = (state = initState, action) => {
 
         case 'addToWishlist': {
             state.wishlist.push(action.payload)
+            return {
+                ...state
+            }
+        }
+        case 'setShowCart': {
+            state.isCartShow = !state.isCartShow
             return {
                 ...state
             }
