@@ -1,8 +1,8 @@
 import { listGame } from '../fakeData/game'
-import uniqueItem from '../utils/uniqueItem'
+
 
 const initState = {
-    userWallet: 500,
+    userWallet: 200,
     listGame: listGame,
     selectedGame: {
         id: '',
@@ -59,6 +59,15 @@ const rootReducer = (state = initState, action) => {
             return {
                 ...state,
                 cart: cart
+            }
+        }
+        case 'pay': {
+            let wallet = state.userWallet
+            wallet = wallet - action.payload
+            return {
+                ...state,
+                userWallet: wallet,
+                cart: []
             }
         }
         default:

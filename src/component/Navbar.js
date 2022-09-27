@@ -10,7 +10,8 @@ import { useDispatch, useSelector } from 'react-redux'
 const navigation = [
     { name: 'Dashboard', href: '/', current: true },
     { name: 'My Cart', href: '/mycart', current: false },
-    { name: 'Trending', href: '/trending', current: false },
+    { name: 'Store', href: '/store', current: false },
+    { name: 'Community', href: '/community', current: false },
     { name: 'For developer', href: '/dev', current: false },
 ]
 

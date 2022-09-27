@@ -28,3 +28,10 @@ export const deleteFromCart = (data) => {
     }
 }
 
+export const pay = (data) => {
+    return {
+        type: 'pay',
+        payload: data
+    }
+}
+
