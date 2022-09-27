@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Divider from './Divider'
 import { useSelector, useDispatch } from 'react-redux'
 import { addToCart, addToWishlist } from '../Redux/action'

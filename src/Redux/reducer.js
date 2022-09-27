@@ -4,6 +4,7 @@ import uniqueItem from '../utils/uniqueItem'
 const initState = {
     listGame: listGame,
     selectedGame: {
+        id: '',
         name: '',
         genre: '',
         image: 'https://ict-imgs.vgcloud.vn/2021/12/21/09/game-nft-la-gi-va-hoa-t-do-ng-nhu-the-na-o.jpg',
@@ -28,7 +29,8 @@ const rootReducer = (state = initState, action) => {
             }
         }
         case 'addToCart': {
-            state.cart.push(action.payload)
+            if (state.cart.includes(action.payload)) return state
+            else state.cart.push(action.payload)
             return {
                 ...state
             }
@@ -42,6 +44,12 @@ const rootReducer = (state = initState, action) => {
         }
         case 'setShowCart': {
             state.isCartShow = !state.isCartShow
+            return {
+                ...state
+            }
+        }
+        case 'deleteFromCart': {
+            state.cart.splice(action.payload, 1)
             return {
                 ...state
             }

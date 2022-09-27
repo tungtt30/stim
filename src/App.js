@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { BrowserRouter, Route, Switch, useHistory } from "react-router-dom"
 import Home from './pages/Home';
 import Trending from './pages/Trending';
 import MyCart from './pages/MyCart';
@@ -9,10 +9,12 @@ import Header from './component/Header'
 
 
 
+
 function App() {
+  const history = useHistory()
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter history={history}>
 
         <Header />
 

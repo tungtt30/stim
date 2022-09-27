@@ -21,3 +21,10 @@ export const addToWishlist = (data) => {
     }
 }
 
+export const deleteFromCart = (data) => {
+    return {
+        type: 'deleteFromCart',
+        payload: data
+    }
+}
+
