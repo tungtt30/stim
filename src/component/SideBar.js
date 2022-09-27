@@ -26,7 +26,7 @@ const SideBar = () => {
                     <p className=''>Wallet</p>
                 </div>
                 <div className='flex space-x-2 justify-center text-center'>
-                    <div className='w-20 h-10 bg-slate-700 rounded-lg text-lg pt-1'><span className=''>500 $</span></div>
+                    <div className='w-20 h-10 bg-slate-700 rounded-lg text-lg pt-1'><span className=''>{gameState.userWallet} $</span></div>
                 </div>
                 <div className='space-y-2 p-2 cursor-pointer' >
                     <div className='h-8 bg-blue-900 p-2 rounded-md hover:bg-blue-500'>

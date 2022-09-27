@@ -40,23 +40,6 @@ const MyCart = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                                <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Item
-                                </th>
-                                <td className="py-4 px-6">
-                                    100 $
-                                </td>
-                                <td className="py-4 px-6">
-                                    59%
-                                </td>
-                                <td className="py-4 px-6">
-                                    100%
-                                </td>
-                                <td className="py-4 px-6 text-right">
-                                    <button className='h-8 w-20 bg-red-700 rounded-lg text-white' onClick={handleDelete}>Delete</button>
-                                </td>
-                            </tr>
                             {gameState.cart.map((item, index) => {
                                 return (
                                     <tr key={item.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">

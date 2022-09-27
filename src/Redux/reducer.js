@@ -2,6 +2,7 @@ import { listGame } from '../fakeData/game'
 import uniqueItem from '../utils/uniqueItem'
 
 const initState = {
+    userWallet: 500,
     listGame: listGame,
     selectedGame: {
         id: '',
@@ -23,16 +24,20 @@ const initState = {
 const rootReducer = (state = initState, action) => {
     switch (action.type) {
         case 'selectGame': {
-            state.selectedGame = action.payload
+            let selectedGame = state.selectedGame
+            selectedGame = action.payload
             return {
-                ...state
+                ...state,
+                selectedGame: selectedGame
             }
         }
         case 'addToCart': {
-            if (state.cart.includes(action.payload)) return state
-            else state.cart.push(action.payload)
+            let cart = state.cart
+            cart.push(action.payload)
+            let uniqueCart = cart.filter((v, i, a) => a.findIndex(v2 => (v2.id === v.id)) === i)
             return {
-                ...state
+                ...state,
+                cart: uniqueCart
             }
         }
 
@@ -49,9 +54,11 @@ const rootReducer = (state = initState, action) => {
             }
         }
         case 'deleteFromCart': {
-            state.cart.splice(action.payload, 1)
+            let cart = state.cart
+            cart.splice(action.payload, 1)
             return {
-                ...state
+                ...state,
+                cart: cart
             }
         }
         default:
