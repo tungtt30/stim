@@ -6,7 +6,7 @@ const Cart = () => {
 
 
     return (
-        <div className='absolute bg-gradient-to-b from-black opa to-blue-800 h-64 text-white w-72 right-10 overflow-scroll scrollbar-hidden p-2 rounded-lg mt-1 shadow-2xl'>
+        <div className='absolute bg-gradient-to-b from-black opa to-blue-800 h-64 text-white w-72 right-10 overflow-scroll scrollbar-hidden p-2 rounded-lg mt-1 shadow-2xl z-20'>
             <p className='text-center p-2 text-lg'>My cart</p>
             <div className=''>
                 {cart.map((item) => {

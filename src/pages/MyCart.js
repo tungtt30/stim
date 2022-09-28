@@ -140,7 +140,7 @@ const MyCart = () => {
                                     </div>
                                     <div className='m-4'>
                                         <p>#2077</p>
-                                        <p>Tung Trinh</p>
+                                        <p>User name</p>
                                         <p>{today}</p>
                                     </div>
                                 </div>
