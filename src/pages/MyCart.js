@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Divider from '../component/Divider'
 import today from '../utils/dateFormat'
 import { deleteFromCart, pay } from '../Redux/action'
+import emptyWallet from "../assets/emptyWallet.png";
 
 
 const MyCart = () => {
@@ -51,7 +52,7 @@ const MyCart = () => {
                         <p className='text-xl'>Not enough balance !</p>
                     </div>
                     <div className='w-64 overflow-hidden rounded-lg items-center mx-auto my-3 '>
-                        <img src='https://www.pngkey.com/png/detail/104-1044839_empty-wallet-png.png' />
+                        <img src={emptyWallet} />
                     </div>
                     <div className='flex space-x-4 mt-10 justify-evenly text-center '>
                         <p className=' h-10 w-20 border border-blue-600 font-semiboldbold rounded-lg pt-1 text-lg cursor-pointer' onClick={handleModal}>Top-up</p>
